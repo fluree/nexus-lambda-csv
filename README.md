@@ -1,14 +1,7 @@
-# Welcome to your CDK TypeScript project
+# Nexus Lambda Csv endpoint
 
-This is a blank project for CDK development with TypeScript.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+- deploy using your aws credentials in a profile or default
+- modify the environment variable in the construct to point to the correct nexus dataset
+- send the api-key as a query-param `?api-key=asfasdfasd`
+- can modify the query in the lambda handler
+- returns a csv file of results
